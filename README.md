@@ -1,0 +1,39 @@
+# Templates
+
+This repository contains various framework templates to quickly scaffold new projects in frameworks I like to use personally or professionally.
+
+## Principles
+
+The templates follow what I think are "best practices" for structuring and tooling these different projects.
+
+It is especially important that no matter what is set up in the project, VSCode / Zed configurations play nice with the project's tooling.
+
+As a common through-line, these each have the following:
+
+- `oxlint`, `oxfmt`: Linting and formatting tools
+- `pnpm + node`, `bun`, or `deno`: Package managers and runtime environments, dependent on whatever I think is cool at the time.
+Typically, `pnpm + node` is my go-to.
+- `.vscode/` + `.zed/`: Editor configuration files for VS Code and Zed for a consistent development environment. I try to work with the ecosystem used by the project.
+- `typescript`
+- `git`
+
+
+## Available Templates
+
+| Template | Path |
+| --- | --- |
+| [`next`](./template/next) | [`./template/next`](./template/next) |
+| [`astro`](./template/astro) | [`./template/astro`](./template/astro) |
+| [`wrenjs`](./template/wrenjs) | [`./template/wrenjs`](./template/wrenjs) |
+
+## Installation
+
+### Manual Installation
+
+1. Copy the template directory
+2. You're ready to go!
+
+
+### CLI Tool
+
+This repository also publishes to the NPM Registry a tool which assists with cloning templates from this repository and bumping packages to their latest, as well as assisting with overriding any template-y defaults or adding additional configurations.
