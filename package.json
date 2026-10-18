@@ -1,0 +1,24 @@
+{
+	"name": "#monorepo",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"check": "vp check --fix",
+		"lint": "vpr check",
+		"prepare": "vp config"
+	},
+	"devDependencies": {
+		"@slowpoketail/oxc": "workspace:*",
+		"vite-plus": "catalog:"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.14.0",
+			"onFail": "download"
+		}
+	},
+	"engines": {
+		"node": "^26"
+	}
+}

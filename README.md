@@ -12,18 +12,17 @@ As a common through-line, these each have the following:
 
 - `oxlint`, `oxfmt`: Linting and formatting tools
 - `pnpm + node`, `bun`, or `deno`: Package managers and runtime environments, dependent on whatever I think is cool at the time.
-Typically, `pnpm + node` is my go-to.
+  Typically, `pnpm + node` is my go-to.
 - `.vscode/` + `.zed/`: Editor configuration files for VS Code and Zed for a consistent development environment. I try to work with the ecosystem used by the project.
 - `typescript`
 - `git`
 
-
 ## Available Templates
 
-| Template | Path |
-| --- | --- |
-| [`next`](./template/next) | [`./template/next`](./template/next) |
-| [`astro`](./template/astro) | [`./template/astro`](./template/astro) |
+| Template                      | Path                                     |
+| ----------------------------- | ---------------------------------------- |
+| [`next`](./template/next)     | [`./template/next`](./template/next)     |
+| [`astro`](./template/astro)   | [`./template/astro`](./template/astro)   |
 | [`wrenjs`](./template/wrenjs) | [`./template/wrenjs`](./template/wrenjs) |
 
 ## Installation
@@ -32,20 +31,28 @@ Typically, `pnpm + node` is my go-to.
 
 1. Do one of the following:
 
-    a. Download as zip and extract it, then copy the template directory from this repo
+   a. Download as zip and extract it, then copy the template directory from this repo
 
-    b. Run your package manager's execute command to install the template directly, e.g.:
-    ```sh
-    npx degit austin-raey/templates/template/{name} ./my-new-project
+   b. Run your package manager's execute command to install the template directly, e.g.:
 
-    pnpx degit austin-raey/templates/template/{name} ./my-new-project
+   ```sh
+   npx degit austin-raey/templates/template/{name} ./my-new-project
 
-    bunx degit austin-raey/templates/template/{name} ./my-new-project
-    ```
+   pnpx degit austin-raey/templates/template/{name} ./my-new-project
+
+   bunx degit austin-raey/templates/template/{name} ./my-new-project
+   ```
 
 2. You're ready to go!
 
+## Packages
 
-### CLI Tool
+This repository also exports a few packages that can be used within the scope of this project or with compatible meta-frameworks.
 
-This repository also publishes to the NPM Registry a tool which assists with cloning templates from this repository and bumping packages to their latest, as well as assisting with overriding any template-y defaults or adding additional configurations.
+### `bskt`
+
+Template downloader and executor for project templates
+
+### `@slowpoketail/oxc`
+
+Shareable configuration and tooling for the `oxc` ecosystem.
