@@ -10,7 +10,7 @@ catalog:
   "eslint-config-preact": "2.0.0"
   "eslint-plugin-better-tailwindcss": "4.9.1"
   "eslint-plugin-perfectionist": "5.12.1"
-  "eslint-plugin-sonarjs": "4.2.2"
+  "rolldown-license-plugin": "3.0.14"
   "typescript": "7.0.2"
   "vite-plus": "1.3.0"
   "vite": "npm:@voidzero-dev/vite-plus-core@1.3.0"

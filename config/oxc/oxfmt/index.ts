@@ -27,6 +27,10 @@ export default {
 		sortSideEffects: false,
 	},
 	sortPackageJson: true,
-	sortTailwindcss: true,
+	/**
+	 * Let the user decide whether to sort Tailwind CSS classes.
+	 * Also, the plugins for oxlint can handle this a bit better.
+	 */
+	sortTailwindcss: false,
 	useTabs: true,
 } satisfies OxfmtConfig;

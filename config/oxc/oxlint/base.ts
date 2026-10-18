@@ -1,9 +1,9 @@
 import type { OxlintConfig } from "oxlint";
 
-import e18e from "@e18e/eslint-plugin";
-import perfectionist from "eslint-plugin-perfectionist";
-import sonarjs from "eslint-plugin-sonarjs";
-import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
+
+import e18e from "./plugins/e18e.ts";
+import perfectionist from "./plugins/perfectionist.ts";
 
 const base: OxlintConfig = {
 	categories: {
@@ -16,15 +16,11 @@ const base: OxlintConfig = {
 	jsPlugins: [
 		{
 			name: "e18e",
-			specifier: createRequire(import.meta.url).resolve("@e18e/eslint-plugin"),
-		},
-		{
-			name: "sonarjs",
-			specifier: createRequire(import.meta.url).resolve("eslint-plugin-sonarjs"),
+			specifier: fileURLToPath(import.meta.resolve("@slowpoketail/oxc/plugins/e18e")),
 		},
 		{
 			name: "perfectionist",
-			specifier: createRequire(import.meta.url).resolve("eslint-plugin-perfectionist"),
+			specifier: fileURLToPath(import.meta.resolve("@slowpoketail/oxc/plugins/perfectionist")),
 		},
 	],
 
@@ -59,7 +55,6 @@ const base: OxlintConfig = {
 
 		/** Reason: Recommended rule spreading from plugins */
 		...e18e.configs.recommended.rules,
-		...sonarjs.configs.recommended.rules,
 		...perfectionist.configs["recommended-natural"].rules,
 	},
 };
