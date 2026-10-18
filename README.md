@@ -30,7 +30,19 @@ Typically, `pnpm + node` is my go-to.
 
 ### Manual Installation
 
-1. Copy the template directory
+1. Do one of the following:
+
+    a. Download as zip and extract it, then copy the template directory from this repo
+
+    b. Run your package manager's execute command to install the template directly, e.g.:
+    ```sh
+    npx degit austin-raey/templates/template/{name} ./my-new-project
+
+    pnpx degit austin-raey/templates/template/{name} ./my-new-project
+
+    bunx degit austin-raey/templates/template/{name} ./my-new-project
+    ```
+
 2. You're ready to go!
 
 
