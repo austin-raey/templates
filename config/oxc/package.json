@@ -1,6 +1,6 @@
 {
 	"name": "@slowpoketail/oxc",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Shareable configurations for Oxlint and Oxfmt",
 	"keywords": [
 		"configuration",
