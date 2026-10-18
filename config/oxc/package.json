@@ -1,16 +1,24 @@
 {
 	"name": "@slowpoketail/oxc",
 	"version": "1.0.0",
-	"description": "A starter for creating a TypeScript package.",
-	"homepage": "https://github.com/author/library#readme",
+	"description": "Shareable configurations for Oxlint and Oxfmt",
+	"keywords": [
+		"configuration",
+		"eslint",
+		"oxc",
+		"oxfmt",
+		"oxlint",
+		"shareable"
+	],
+	"homepage": "https://github.com/austin-raey/templates",
 	"bugs": {
-		"url": "https://github.com/author/library/issues"
+		"url": "https://github.com/austin-raey/templates/issues"
 	},
 	"license": "MIT",
-	"author": "Author Name <author.name@mail.com>",
+	"author": "Austin Raey <24833719+austin-raey@users.noreply.github.com>",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/author/library.git"
+		"url": "git+https://github.com/austin-raey/templates.git"
 	},
 	"files": [
 		"dist"
