@@ -1,6 +1,8 @@
 # OXC Configuration
 
-This directory contains shareable configurations of Oxlint and Oxfmt.
+This package contains shareable configurations of Oxlint and Oxfmt.
+
+**NOTE:** At this time, it is known that certain package dependencies may not be used by the user. They are all included / installed for convenience.
 
 ## Usage
 
