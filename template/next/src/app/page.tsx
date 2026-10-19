@@ -19,7 +19,7 @@ export default function Home() {
 				<Image
 					alt="Next.js logo"
 					className="
-block-5 inline-[100px]
+						block-5 inline-25
 						dark:invert
 					"
 					height={20}
@@ -87,10 +87,10 @@ block-5 inline-[100px]
 				>
 					<a
 						className="
-							bg-foreground text-background flex items-center justify-center gap-2
-							rounded-full px-5 transition-colors block-12 inline-full
+							flex items-center justify-center gap-2 rounded-full bg-foreground px-5
+							text-background transition-colors block-12 inline-full
 							hover:bg-[#383838]
-							md:inline-[158px]
+							md:inline-39.5
 							dark:hover:bg-[#ccc]
 						"
 						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -100,7 +100,7 @@ block-5 inline-[100px]
 						<Image
 							alt="Vercel logomark"
 							className="
-								block-[14px] inline-4
+								block-3.5 inline-4
 								dark:invert
 							"
 							height={14}
@@ -114,7 +114,7 @@ block-5 inline-[100px]
 							flex items-center justify-center rounded-full border border-solid
 							border-black/8 px-5 transition-colors block-12 inline-full
 							hover:border-transparent hover:bg-black/4
-							md:inline-[158px]
+							md:inline-39.5
 							dark:border-white/[.145]
 							dark:hover:bg-[#1a1a1a]
 						"

@@ -1,7 +1,19 @@
 {
+	"[javascript]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
 	"editor.codeActionsOnSave": {
-		"source.fixAll.oxc": "always",
 		"source.format.oxc": "always",
+		"source.fixAll.oxc": "always",
 		"source.sort.json": "never"
 	},
 	"editor.defaultFormatter": "oxc.oxc-vscode",
@@ -20,6 +32,9 @@
 	"oxc.disableNestedConfig": false,
 	"oxc.enable": true,
 	"oxc.fixKind": "safe_fix_or_suggestion",
+	"oxc.fmt.disableNestedConfig": false,
+	"oxc.path.oxfmt": "./node_modules/oxfmt/bin/oxfmt",
+	"oxc.path.oxlint": "./node_modules/oxlint/bin/oxlint",
 	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
 	"js/ts.tsdk.path": "./node_modules/typescript",
 	"prettier.enable": false

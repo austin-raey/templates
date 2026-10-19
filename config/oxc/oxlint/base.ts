@@ -23,7 +23,7 @@ const base: OxlintConfig = {
 		typeCheck: true,
 	},
 
-	plugins: ["eslint", "import", "jest", "jsdoc", "promise", "typescript", "unicorn", "vitest"],
+	plugins: ["eslint", "import", "jsdoc", "promise", "typescript", "unicorn"],
 
 	rules: {
 		/** Too restrictive. Someone might want to use lowercase comments. */
@@ -97,6 +97,9 @@ const base: OxlintConfig = {
 			},
 		],
 
+		/** Restrictive? May prevent actual use cases? */
+		"eslint/no-continue": "off",
+
 		/**
 		 * Too restrictive. While I do like this a lot,
 		 * literally dividing by 2 causes a lint error.
@@ -119,6 +122,9 @@ const base: OxlintConfig = {
 
 		/** Too restrictive */
 		"import/prefer-default-export": "off",
+
+		/** Too restrictive / may also conflict with others. I personally avoid null but this seems problematic. */
+		"unicorn/no-null": "off",
 	},
 };
 

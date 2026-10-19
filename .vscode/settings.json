@@ -1,40 +1,43 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.oxc": "always",
-    "source.format.oxc": "always",
-    "source.sort.json": "never"
-  },
-  "editor.defaultFormatter": "oxc.oxc-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file",
-  "editor.insertSpaces": false,
-  "eslint.enable": false,
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "files.encoding": "utf8",
-  "files.eol": "\n",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "js/ts.tsdk.path": "./node_modules/typescript",
-  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
-  "npm.scriptRunner": "vp",
-  "oxc.disableNestedConfig": false,
-  "oxc.enable": true,
-  "oxc.fixKind": "safe_fix_or_suggestion",
-  "oxc.fmt.disableNestedConfig": false,
-  "prettier.enable": false
+	"[javascript]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "oxc.oxc-vscode"
+	},
+	"biome.enable": false,
+	"editor.codeActionsOnSave": {
+		"source.format.oxc": "always",
+		"source.fixAll.oxc": "always",
+		"source.sort.json": "never"
+	},
+	"editor.defaultFormatter": "oxc.oxc-vscode",
+	"editor.formatOnSave": false,
+	"editor.formatOnSaveMode": "file",
+	"editor.insertSpaces": false,
+	"eslint.enable": false,
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"files.encoding": "utf8",
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"js/ts.tsdk.path": "./node_modules/typescript",
+	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+	"npm.scriptRunner": "vp",
+	"oxc.disableNestedConfig": false,
+	"oxc.enable": true,
+	"oxc.fixKind": "safe_fix_or_suggestion",
+	"oxc.fmt.disableNestedConfig": false,
+	"oxc.path.oxfmt": "./node_modules/oxfmt/bin/oxfmt",
+	"oxc.path.oxlint": "./node_modules/oxlint/bin/oxlint",
+	"prettier.enable": false
 }
