@@ -10,7 +10,7 @@
         "react-dom": "19.3.1",
       },
       "devDependencies": {
-        "@slowpoketail/oxc": "1.2.0",
+        "@slowpoketail/oxc": "1.2.1",
         "@tailwindcss/turbopack": "4.3.3",
         "@types/node": "26.6.5",
         "@types/react": "19.3.0",
@@ -226,7 +226,7 @@
 
     "@oxlint/binding-win32-x64-msvc": ["@oxlint/binding-win32-x64-msvc@1.88.0", "", { "os": "win32", "cpu": "x64" }, "sha512-3Sz6rVWe8Dy+ufsXurFN1GX2dX43F/lQMSLelK9gFjiba7nHvLlqlhR5cHlWVnCpSqUY1hN9pyCX9XToe6ve6g=="],
 
-    "@slowpoketail/oxc": ["@slowpoketail/oxc@1.2.0", "", { "dependencies": { "@e18e/eslint-plugin": "0.8.1", "eslint-plugin-perfectionist": "5.12.1" }, "peerDependencies": { "@unocss/eslint-plugin": "*", "eslint-plugin-better-tailwindcss": "*", "oxfmt": "*", "oxlint": "*", "vite-plus": "*" }, "optionalPeers": ["@unocss/eslint-plugin", "eslint-plugin-better-tailwindcss", "oxfmt", "oxlint", "vite-plus"] }, "sha512-XlCec1bBWNnv1Yf4QPkieTDgG+qAxPx4V6tTt5pP/w/KyqL1ZFTeo9EFD4kmTKE+DFjr5TiW/U2iyTbEmvhQsA=="],
+    "@slowpoketail/oxc": ["@slowpoketail/oxc@1.2.1", "", { "dependencies": { "@e18e/eslint-plugin": "0.8.1", "eslint-plugin-perfectionist": "5.12.1" }, "peerDependencies": { "@unocss/eslint-plugin": "*", "eslint-plugin-better-tailwindcss": "*", "oxfmt": "*", "oxlint": "*", "vite-plus": "*" }, "optionalPeers": ["@unocss/eslint-plugin", "eslint-plugin-better-tailwindcss", "oxfmt", "oxlint", "vite-plus"] }, "sha512-zABDtd9NXaX3KuAIrhdRRScrF7Rgo9LGiOiNIlzx3IlExnCdrEsuCa9MtBlXd7x6Z+YIeg6UT3DsSrPp+CdA+A=="],
 
     "@swc/helpers": ["@swc/helpers@0.5.23", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw=="],
 

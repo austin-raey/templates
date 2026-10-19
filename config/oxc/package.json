@@ -1,6 +1,6 @@
 {
 	"name": "@slowpoketail/oxc",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "Shareable configurations for Oxlint and Oxfmt",
 	"keywords": [
 		"configuration",
@@ -47,13 +47,12 @@
 		"test": "vp test"
 	},
 	"dependencies": {
-		"@e18e/eslint-plugin": "0.8.1",
-		"eslint-plugin-perfectionist": "5.12.1"
+		"eslint-plugin-perfectionist": "catalog:plugins"
 	},
 	"devDependencies": {
 		"@types/node": "catalog:",
-		"@unocss/eslint-plugin": "66.11.0",
-		"eslint-plugin-better-tailwindcss": "4.9.1",
+		"@unocss/eslint-plugin": "catalog:plugins",
+		"eslint-plugin-better-tailwindcss": "catalog:plugins",
 		"typescript": "catalog:",
 		"vite-plus": "catalog:"
 	},

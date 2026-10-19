@@ -1,3 +1,1 @@
-import base from "./base.ts";
-
-export default base;
+export { default } from "./base.ts";

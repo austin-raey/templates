@@ -9,6 +9,7 @@
 	},
 	"devDependencies": {
 		"@slowpoketail/oxc": "workspace:*",
+		"eslint-plugin-perfectionist": "catalog:plugins",
 		"vite-plus": "catalog:"
 	},
 	"devEngines": {

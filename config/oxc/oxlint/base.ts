@@ -1,25 +1,20 @@
 import type { OxlintConfig } from "oxlint";
 
-import e18e from "@e18e/eslint-plugin";
 import perfectionist from "eslint-plugin-perfectionist";
-import { createRequire } from "node:module";
 
 const base: OxlintConfig = {
 	categories: {
 		correctness: "error",
 		perf: "warn",
 		restriction: "error",
+		style: "warn",
 		suspicious: "warn",
 	},
 
 	jsPlugins: [
 		{
-			name: "e18e",
-			specifier: createRequire(import.meta.url).resolve("@e18e/eslint-plugin"),
-		},
-		{
 			name: "perfectionist",
-			specifier: createRequire(import.meta.url).resolve("eslint-plugin-perfectionist"),
+			specifier: "eslint-plugin-perfectionist",
 		},
 	],
 
@@ -37,7 +32,8 @@ const base: OxlintConfig = {
 
 	rules: {
 		/** Reason: Handled by perfectionist plugin */
-		"eslint/sort-keys": "off",
+		/** Reason: Handled by perfectionist plugin */
+		"eslint/sort-imports": "off",
 		/** Reason: Enforces a newline after import statements */
 		"import/newline-after-import": "warn",
 		/** Reason: Inflexible / useful if the user prefers importing under any name / some frameworks use default exports */
@@ -51,9 +47,9 @@ const base: OxlintConfig = {
 		],
 		/** Reason: Assume user is in a "newer" environment. Can override if not supported. Technically, there are probably performance considerations the user should consider. */
 		"oxc/no-rest-spread-properties": "off",
-
+		/** Reason: Handled by perfectionist plugin */
+		"perfectionist/sort-imports": "off",
 		/** Reason: Recommended rule spreading from plugins */
-		...e18e.configs.recommended.rules,
 		...perfectionist.configs["recommended-natural"].rules,
 	},
 };

@@ -2,35 +2,76 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-			<main className="flex w-full max-w-3xl flex-1 flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
+		<div
+			className="
+     flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans
+     dark:bg-black
+   "
+		>
+			<main
+				className="
+      flex inline-full max-inline-3xl flex-1 flex-col items-center justify-between
+      bg-white px-16 py-32
+      sm:items-start
+      dark:bg-black
+    "
+			>
 				<Image
 					alt="Next.js logo"
-					className="h-5 w-[100px] dark:invert"
+					className="
+       block-5 inline-[100px]
+       dark:invert
+     "
 					height={20}
 					priority
 					src="/next.svg"
 					width={100}
 				/>
-				<div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-					<h1 className="max-w-xs text-3xl leading-10 font-semibold tracking-tight text-black dark:text-zinc-50">
+				<div
+					className="
+       flex flex-col items-center gap-6 text-center
+       sm:items-start sm:text-start
+     "
+				>
+					<h1
+						className="
+        max-inline-xs text-3xl/10  font-semibold tracking-tight text-black
+        dark:text-zinc-50
+      "
+					>
 						To get started, edit the{" "}
-						<code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
+						<code
+							className="
+         rounded-sm bg-black/6 px-1.5 py-0.5 font-mono text-[0.9em]
+         dark:bg-white/8
+       "
+						>
 							page.tsx
 						</code>{" "}
 						file.
 					</h1>
-					<p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+					<p
+						className="
+        max-inline-md text-lg/8  text-zinc-600
+        dark:text-zinc-400
+      "
+					>
 						Looking for a starting point or more instructions? Head over to{" "}
 						<a
-							className="font-medium text-zinc-950 dark:text-zinc-50"
+							className="
+         font-medium text-zinc-950
+         dark:text-zinc-50
+       "
 							href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
 						>
 							Templates
 						</a>{" "}
 						or the{" "}
 						<a
-							className="font-medium text-zinc-950 dark:text-zinc-50"
+							className="
+         font-medium text-zinc-950
+         dark:text-zinc-50
+       "
 							href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
 						>
 							Learning
@@ -38,16 +79,30 @@ export default function Home() {
 						center.
 					</p>
 				</div>
-				<div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+				<div
+					className="
+       flex flex-col gap-4 text-base font-medium
+       sm:flex-row
+     "
+				>
 					<a
-						className="bg-foreground text-background flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors hover:bg-[#383838] md:w-[158px] dark:hover:bg-[#ccc]"
+						className="
+        bg-foreground text-background flex items-center justify-center gap-2
+        rounded-full px-5 transition-colors block-12 inline-full
+        hover:bg-[#383838]
+        md:inline-[158px]
+        dark:hover:bg-[#ccc]
+      "
 						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
 						<Image
 							alt="Vercel logomark"
-							className="h-[14px] w-4 dark:invert"
+							className="
+         block-[14px] inline-4
+         dark:invert
+       "
 							height={14}
 							src="/vercel.svg"
 							width={16}
@@ -55,7 +110,14 @@ export default function Home() {
 						Deploy Now
 					</a>
 					<a
-						className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] md:w-[158px] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
+						className="
+						flex items-center justify-center rounded-full border border-solid border-black/8
+        px-5 transition-colors block-12 inline-full
+        hover:border-transparent hover:bg-black/4
+        md:inline-[158px]
+        dark:border-white/[.145]
+        dark:hover:bg-[#1a1a1a]
+      "
 						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
 						rel="noopener noreferrer"
 						target="_blank"
