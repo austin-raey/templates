@@ -1,9 +1,8 @@
 import type { OxlintConfig } from "oxlint";
 
-import { fileURLToPath } from "node:url";
-
-import e18e from "./plugins/e18e.ts";
-import perfectionist from "./plugins/perfectionist.ts";
+import e18e from "@e18e/eslint-plugin";
+import perfectionist from "eslint-plugin-perfectionist";
+import { createRequire } from "node:module";
 
 const base: OxlintConfig = {
 	categories: {
@@ -16,11 +15,11 @@ const base: OxlintConfig = {
 	jsPlugins: [
 		{
 			name: "e18e",
-			specifier: fileURLToPath(import.meta.resolve("@slowpoketail/oxc/plugins/e18e")),
+			specifier: createRequire(import.meta.url).resolve("@e18e/eslint-plugin"),
 		},
 		{
 			name: "perfectionist",
-			specifier: fileURLToPath(import.meta.resolve("@slowpoketail/oxc/plugins/perfectionist")),
+			specifier: createRequire(import.meta.url).resolve("eslint-plugin-perfectionist"),
 		},
 	],
 

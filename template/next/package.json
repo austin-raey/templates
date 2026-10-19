@@ -14,7 +14,7 @@
 		"react-dom": "19.3.1"
 	},
 	"devDependencies": {
-		"@slowpoketail/oxc": "1.1.0",
+		"@slowpoketail/oxc": "1.1.1",
 		"@tailwindcss/turbopack": "4.3.3",
 		"@types/node": "26.6.5",
 		"@types/react": "19.3.0",

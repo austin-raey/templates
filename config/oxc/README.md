@@ -2,7 +2,9 @@
 
 This package contains shareable configurations of Oxlint and Oxfmt.
 
-**NOTE:** At this time, it is known that certain package dependencies may not be used by the user. They are all bundled for convenience.
+By default, only `base` configuration dependencies are included for you when this package is installed.
+
+For others, running lint should hint at missing dependencies. For completion, these additional dependencies are listed in the `peerDependencies` section of the `package.json`.
 
 ## Usage
 

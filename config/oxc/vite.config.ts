@@ -1,4 +1,3 @@
-import { licensePlugin } from "rolldown-license-plugin";
 import { defineConfig } from "vite-plus";
 
 import fmt from "./oxfmt/index.ts";
@@ -11,11 +10,7 @@ export default defineConfig({
 	},
 	pack: {
 		deps: {
-			alwaysBundle: ["@e18e/eslint-plugin", "eslint-plugin-perfectionist"],
-			dts: {
-				alwaysBundle: [],
-				neverBundle: true,
-			},
+			neverBundle: true,
 			resolveDepSubpath: true,
 		},
 		dts: {
@@ -25,27 +20,8 @@ export default defineConfig({
 			"fmt": "oxfmt/index.ts",
 			"lint": "oxlint/index.ts",
 			"lint/*": "oxlint/*.ts",
-			"plugins/*": "oxlint/plugins/*.ts",
 		},
 		exports: true,
 		minify: true,
-		plugins: [
-			licensePlugin({
-				done(dependencies, context) {
-					context.emitFile({
-						fileName: "THIRD_PARTY_LICENSES.txt",
-						source:
-							dependencies
-								.map(
-									({ license, licenseText, name, version }) =>
-										`${name}@${version} - ${license}\n${licenseText}`,
-								)
-								.join("\n\n") + "\n",
-						type: "asset",
-					});
-				},
-			}),
-		],
-		shims: true,
 	},
 });
