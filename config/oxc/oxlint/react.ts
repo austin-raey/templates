@@ -30,6 +30,8 @@ const react: OxlintConfig = {
 		],
 		/** Too restrictive, loosen */
 		"react/jsx-max-depth": ["warn", { max: 6 }],
+		/** IMO in the age of typescript, this should be fine */
+		"react/jsx-props-no-spreading": "off",
 		/** In React 17 and later, importing React in every file is no longer necessary. */
 		"react/react-in-jsx-scope": "off",
 	},

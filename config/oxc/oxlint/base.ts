@@ -56,7 +56,17 @@ const base: OxlintConfig = {
 		/** Allows style side effects */
 		"import/no-unassigned-import": [
 			"error",
-			{ allow: ["**/*.css", "**/*.scss", "**/*.less", "**/*.styl", "**/*.sass"] },
+			{
+				allow: [
+					"**/*.css",
+					"**/*.scss",
+					"**/*.less",
+					"**/*.styl",
+					"**/*.sass",
+					"**/*test*",
+					"server-only",
+				],
+			},
 		],
 
 		/** Assume user is in a "newer" environment. Can override if not supported. Technically, there are probably performance considerations the user should consider. */
@@ -130,6 +140,12 @@ const base: OxlintConfig = {
 		/** Too restrictive */
 		"eslint/no-undefined": "off",
 
+		/** Too restrictive. */
+		"eslint/prefer-named-capture-group": "off",
+
+		/** Can conflict with perfectionist */
+		"eslint/sort-keys": "off",
+
 		/** Too restrictive. I enjoy seeing immediately if something is exported or not.
 		 * There perhaps is value in enforcing exports at the end, however. IDK. Maybe revisit this.
 		 * Also useful in frameworks like Next/Wren/etc. with named exports instead of declaring then having this at the end, you can see it immediately.
@@ -139,6 +155,9 @@ const base: OxlintConfig = {
 		/** Too restrictive */
 		"import/prefer-default-export": "off",
 
+		/** Be less restrictive. I like using .then() in some scenarios and await in most others. */
+		"promise/prefer-await-to-then": "off",
+
 		/** Can be restrictive / as noted in docs, is better to allow user to use the tsconfig item instead */
 		"typescript/consistent-return": "off",
 
@@ -147,6 +166,9 @@ const base: OxlintConfig = {
 
 		/** Too restrictive / may also conflict with others. I personally avoid null but this seems problematic. */
 		"unicorn/no-null": "off",
+
+		/** Some "simple" if/else can have large statements. */
+		"unicorn/prefer-ternary": "off",
 	},
 };
 
