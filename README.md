@@ -1,19 +1,23 @@
 # Templates
 
-This repository contains various framework templates to quickly scaffold new projects in frameworks I like to use personally or professionally.
+This repository contains various framework templates to quickly scaffold new projects in frameworks
+I like to use personally or professionally.
 
 ## Principles
 
-The templates follow what I think are "best practices" for structuring and tooling these different projects.
+The templates follow what I think are "best practices" for structuring and tooling these different
+projects.
 
-It is especially important that no matter what is set up in the project, VSCode / Zed configurations play nice with the project's tooling.
+It is especially important that no matter what is set up in the project, VSCode / Zed configurations
+play nice with the project's tooling.
 
 As a common through-line, these each have the following:
 
 - `oxlint`, `oxfmt`: Linting and formatting tools
-- `pnpm + node`, `bun`, or `deno`: Package managers and runtime environments, dependent on whatever I think is cool at the time.
-  Typically, `pnpm + node` is my go-to.
-- `.vscode/` + `.zed/`: Editor configuration files for VS Code and Zed for a consistent development environment. I try to work with the ecosystem used by the project.
+- `pnpm + node`, `bun`, or `deno`: Package managers and runtime environments, dependent on whatever
+  I think is cool at the time. Typically, `pnpm + node` is my go-to.
+- `.vscode/` + `.zed/`: Editor configuration files for VS Code and Zed for a consistent development
+  environment. I try to work with the ecosystem used by the project.
 - `typescript`
 - `git`
 
@@ -47,7 +51,8 @@ As a common through-line, these each have the following:
 
 ## Packages
 
-This repository also exports a few packages that can be used within the scope of this project or with compatible meta-frameworks.
+This repository also exports a few packages that can be used within the scope of this project or
+with compatible meta-frameworks.
 
 ### `bskt`
 

@@ -12,6 +12,18 @@ export default defineConfig({
 	lint: {
 		extends: [lint],
 		ignorePatterns,
+		overrides: [
+			{
+				files: [
+					"config/oxc/oxlint/base.ts",
+					"config/oxc/oxlint/tailwind.ts",
+					"config/oxc/oxlint/unocss.ts",
+				],
+				rules: {
+					"import/no-nodejs-modules": ["warn", { allow: ["node:url"] }],
+				},
+			},
+		],
 	},
 	run: {
 		cache: true,

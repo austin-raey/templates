@@ -17,7 +17,7 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"oxc.disableNestedConfig": true,
+	"oxc.disableNestedConfig": false,
 	"oxc.enable": true,
 	"oxc.fixKind": "safe_fix_or_suggestion",
 	"js/ts.tsdk.promptToUseWorkspaceVersion": true,

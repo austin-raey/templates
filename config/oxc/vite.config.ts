@@ -7,6 +7,14 @@ export default defineConfig({
 	fmt,
 	lint: {
 		extends: [lint],
+		overrides: [
+			{
+				files: ["oxlint/base.ts", "oxlint/tailwind.ts", "oxlint/unocss.ts"],
+				rules: {
+					"import/no-nodejs-modules": ["warn", { allow: ["node:url"] }],
+				},
+			},
+		],
 	},
 	pack: {
 		deps: {

@@ -1,6 +1,6 @@
 import type { OxfmtConfig } from "oxfmt";
 
-export default {
+const fmt: OxfmtConfig = {
 	arrowParens: "always",
 	astro: {
 		allowShorthand: true,
@@ -10,6 +10,8 @@ export default {
 	endOfLine: "lf",
 	experimentalOperatorPosition: "start",
 	insertFinalNewline: true,
+	printWidth: 100,
+	proseWrap: "always",
 	quoteProps: "consistent",
 	semi: true,
 	sortImports: {
@@ -33,4 +35,6 @@ export default {
 	 */
 	sortTailwindcss: false,
 	useTabs: true,
-} satisfies OxfmtConfig;
+};
+
+export default fmt;

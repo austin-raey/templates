@@ -2,9 +2,13 @@
 
 This package contains shareable configurations of Oxlint and Oxfmt.
 
-By default, only `base` configuration dependencies are included for you when this package is installed.
+At this time, all configuration dependencies are included for you when this package is installed --
+even if you don't explictly use them, for convenience.
 
-For others, running lint should hint at missing dependencies. For completion, these additional dependencies are listed in the `peerDependencies` section of the `package.json`.
+JavaScript plugins use `fileURLToPath(import.meta.resolve(...))` to resolve their ESM entry points
+from this package rather than from the consuming project. This also avoids UnoCSS's incompatible
+CommonJS export shape. Locally linked copies must have their dependencies installed and be built
+before use.
 
 ## Usage
 
