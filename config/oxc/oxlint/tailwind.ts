@@ -18,7 +18,6 @@ const tailwind: OxlintConfig = {
 		"better-tailwindcss/enforce-consistent-important-position": "warn",
 		"better-tailwindcss/enforce-consistent-variant-order": "warn",
 		"better-tailwindcss/enforce-logical-properties": "warn",
-		"better-tailwindcss/no-custom-classname": "warn",
 	},
 };
 
