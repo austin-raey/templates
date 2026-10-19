@@ -68,11 +68,13 @@ const base: OxlintConfig = {
 		/** Recommended rule spreading from plugins */
 		...perfectionist.configs["recommended-natural"].rules,
 
+		/** Too restrictive / I do like the principle, however, the two are different and can have
+		 * different typescript UX / can mean and do different things technically.
+		 */
+		"eslint/func-style": "off",
+
 		/** Too restrictive. Some people like 1 length var */
 		"eslint/id-length": "off",
-
-		/** Too restrictive IMO. Idk there probably are valid cases for this but oh well. */
-		"eslint/init-declarations": "off",
 
 		/** Make less restrictive */
 		// "eslint/no-magic-numbers": [
@@ -88,6 +90,17 @@ const base: OxlintConfig = {
 		// 	},
 		// ],
 
+		/** Too restrictive IMO. Idk there probably are valid cases for this but oh well. */
+		"eslint/init-declarations": "off",
+
+		/** Be less restrictive */
+		"eslint/max-params": [
+			"error",
+			{
+				max: 5,
+			},
+		],
+
 		/** Too restrictive. IMO it is a goodie, needs to revisit... */
 		"eslint/max-statements": [
 			"error",
@@ -99,6 +112,9 @@ const base: OxlintConfig = {
 
 		/** Restrictive? May prevent actual use cases? */
 		"eslint/no-continue": "off",
+
+		/** Can conflict with import/consistent-type-specifier-style, I prefer top level type */
+		"eslint/no-duplicate-imports": "off",
 
 		/**
 		 * Too restrictive. While I do like this a lot,
@@ -122,6 +138,12 @@ const base: OxlintConfig = {
 
 		/** Too restrictive */
 		"import/prefer-default-export": "off",
+
+		/** Can be restrictive / as noted in docs, is better to allow user to use the tsconfig item instead */
+		"typescript/consistent-return": "off",
+
+		/** Also like this in principle but simply using .sort() can prevent some boilerplate in certain instances. */
+		"typescript/require-array-sort-compare": "off",
 
 		/** Too restrictive / may also conflict with others. I personally avoid null but this seems problematic. */
 		"unicorn/no-null": "off",

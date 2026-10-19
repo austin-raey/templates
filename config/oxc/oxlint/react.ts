@@ -9,6 +9,14 @@ const react: OxlintConfig = {
 	extends: [base],
 	plugins: ["react", "react-perf"],
 	rules: {
+		/** Less of an issue with react compiler */
+		"react-perf/jsx-no-jsx-as-prop": "off",
+		/** Less of an issue with react compiler */
+		"react-perf/jsx-no-new-array-as-prop": "off",
+		/** Less of an issue with react compiler */
+		"react-perf/jsx-no-new-function-as-prop": "off",
+		/** Less of an issue with react compiler */
+		"react-perf/jsx-no-new-object-as-prop": "off",
 		/** Too restrictive */
 		"react/forbid-component-props": "off",
 		/** Prevent errors when using typescript, or enforcing usage too much */
