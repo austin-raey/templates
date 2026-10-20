@@ -1,84 +1,86 @@
 {
-	"name": "@slowpoketail/oxc",
-	"version": "1.6.1",
-	"description": "Shareable configurations for Oxlint and Oxfmt",
-	"keywords": [
-		"@slowpoketail",
-		"configuration",
-		"eslint",
-		"format",
-		"lint",
-		"oxc",
-		"oxfmt",
-		"oxlint",
-		"shareable",
-		"slowpoketail"
-	],
-	"homepage": "https://github.com/austin-raey/templates",
-	"bugs": {
-		"url": "https://github.com/austin-raey/templates/issues"
-	},
-	"license": "MIT",
-	"author": "Austin Raey <24833719+austin-raey@users.noreply.github.com>",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/austin-raey/templates.git"
-	},
-	"files": [
-		"dist"
-	],
-	"type": "module",
-	"exports": {
-		"./fmt": "./dist/fmt.mjs",
-		"./lint": "./dist/lint/index.mjs",
-		"./lint/astro": "./dist/lint/astro.mjs",
-		"./lint/base": "./dist/lint/base.mjs",
-		"./lint/jest": "./dist/lint/jest.mjs",
-		"./lint/next": "./dist/lint/next.mjs",
-		"./lint/react": "./dist/lint/react.mjs",
-		"./lint/tailwind": "./dist/lint/tailwind.mjs",
-		"./lint/unocss": "./dist/lint/unocss.mjs",
-		"./lint/vitest": "./dist/lint/vitest.mjs",
-		"./lint/wrenjs": "./dist/lint/wrenjs.mjs",
-		"./package.json": "./package.json"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"scripts": {
-		"build": "vp pack",
-		"check": "oxfmt && oxlint --fix --fix-suggestions",
-		"dev": "vp pack --watch",
-		"prepublishOnly": "vp run build",
-		"test": "vp test"
-	},
-	"dependencies": {
-		"@unocss/eslint-plugin": "catalog:plugins",
-		"eslint-plugin-better-tailwindcss": "catalog:plugins",
-		"eslint-plugin-perfectionist": "catalog:plugins"
-	},
-	"devDependencies": {
-		"@types/node": "catalog:",
-		"oxfmt": "catalog:",
-		"oxlint": "catalog:",
-		"oxlint-tsgolint": "catalog:",
-		"typescript": "catalog:",
-		"vite-plus": "catalog:"
-	},
-	"peerDependencies": {
-		"oxfmt": "*",
-		"oxlint": "*",
-		"vite-plus": "*"
-	},
-	"peerDependenciesMeta": {
-		"oxfmt": {
-			"optional": true
-		},
-		"oxlint": {
-			"optional": true
-		},
-		"vite-plus": {
-			"optional": true
-		}
-	}
+  "name": "@slowpoketail/oxc",
+  "version": "1.6.1",
+  "description": "Shareable configurations for Oxlint and Oxfmt",
+  "keywords": [
+    "@slowpoketail",
+    "configuration",
+    "eslint",
+    "format",
+    "lint",
+    "oxc",
+    "oxfmt",
+    "oxlint",
+    "shareable",
+    "slowpoketail"
+  ],
+  "homepage": "https://github.com/austin-raey/templates",
+  "bugs": {
+    "url": "https://github.com/austin-raey/templates/issues"
+  },
+  "license": "MIT",
+  "author": "Austin Raey <24833719+austin-raey@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austin-raey/templates.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    "./fmt": "./dist/fmt.mjs",
+    "./lint": "./dist/lint/index.mjs",
+    "./lint/astro": "./dist/lint/astro.mjs",
+    "./lint/base": "./dist/lint/base.mjs",
+    "./lint/jest": "./dist/lint/jest.mjs",
+    "./lint/next": "./dist/lint/next.mjs",
+    "./lint/react": "./dist/lint/react.mjs",
+    "./lint/svelte": "./dist/lint/svelte.mjs",
+    "./lint/tailwind": "./dist/lint/tailwind.mjs",
+    "./lint/unocss": "./dist/lint/unocss.mjs",
+    "./lint/vitest": "./dist/lint/vitest.mjs",
+    "./lint/vue": "./dist/lint/vue.mjs",
+    "./lint/wrenjs": "./dist/lint/wrenjs.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "check": "oxfmt && oxlint --fix --fix-suggestions",
+    "dev": "vp pack --watch",
+    "prepublishOnly": "vp run build",
+    "test": "vp test"
+  },
+  "dependencies": {
+    "@unocss/eslint-plugin": "catalog:plugins",
+    "eslint-plugin-better-tailwindcss": "catalog:plugins",
+    "eslint-plugin-perfectionist": "catalog:plugins"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "peerDependencies": {
+    "oxfmt": "*",
+    "oxlint": "*",
+    "vite-plus": "*"
+  },
+  "peerDependenciesMeta": {
+    "oxfmt": {
+      "optional": true
+    },
+    "oxlint": {
+      "optional": true
+    },
+    "vite-plus": {
+      "optional": true
+    }
+  }
 }
