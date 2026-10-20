@@ -6,6 +6,23 @@ At this time, all configuration dependencies are included for you when this pack
 even if you don't explictly use them, for convenience. I understand this does increase install size,
 however. May switch this in the future in a breaking release.
 
+## Currently Supported Linting Configurations
+
+### Formatting
+
+- `@slowpoketail/oxc/fmt`
+
+### Linting
+
+- `@slowpoketail/oxc/lint/base` (also `@slowpoketail/oxc/lint`)
+- `@slowpoketail/oxc/lint/jest`
+- `@slowpoketail/oxc/lint/next` - Includes `@slowpoketail/oxc/lint/react`
+- `@slowpoketail/oxc/lint/react`
+- `@slowpoketail/oxc/lint/tailwind`
+- `@slowpoketail/oxc/lint/unocss`
+- `@slowpoketail/oxc/lint/vitest`
+- `@slowpoketail/oxc/lint/wrenjs`
+
 ## Usage
 
 Install the shared configuration and the tools you use:
